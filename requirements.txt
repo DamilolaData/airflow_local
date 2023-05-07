@@ -1,0 +1,7 @@
+pandas
+pyarrow
+apache-airflow
+yfinance
+requests
+scikit-learn
+datetime
