@@ -1,0 +1,45 @@
+[2023-05-07 20:31:28,164] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: riskthinking_ai_de.ml_training manual__2023-05-07T20:31:11.172023+00:00 [queued]>
+[2023-05-07 20:31:28,183] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: riskthinking_ai_de.ml_training manual__2023-05-07T20:31:11.172023+00:00 [queued]>
+[2023-05-07 20:31:28,184] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-07 20:31:28,185] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-05-07 20:31:28,186] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-07 20:31:28,211] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): ml_training> on 2023-05-07 20:31:11.172023+00:00
+[2023-05-07 20:31:28,221] {standard_task_runner.py:52} INFO - Started process 9762 to run task
+[2023-05-07 20:31:28,228] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'riskthinking_ai_de', 'ml_training', 'manual__2023-05-07T20:31:11.172023+00:00', '--job-id', '277', '--raw', '--subdir', 'DAGS_FOLDER/files/rt_ai_etl.py', '--cfg-path', '/tmp/tmp06layr6i', '--error-file', '/tmp/tmpw89v9weo']
+[2023-05-07 20:31:28,230] {standard_task_runner.py:80} INFO - Job 277: Subtask ml_training
+[2023-05-07 20:31:28,328] {task_command.py:369} INFO - Running <TaskInstance: riskthinking_ai_de.ml_training manual__2023-05-07T20:31:11.172023+00:00 [running]> on host 16ca7fe0df6c
+[2023-05-07 20:31:28,445] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=riskthinking_ai_de
+AIRFLOW_CTX_TASK_ID=ml_training
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-07T20:31:11.172023+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-07T20:31:11.172023+00:00
+[2023-05-07 20:31:28,545] {logging_mixin.py:115} INFO - processed 212 rows
+[2023-05-07 20:31:28,572] {logging_mixin.py:115} INFO -            Symbol Security Name  ...  vol_moving_avg  adj_close_rolling_med
+Date                             ...                                       
+2023-02-14      A         stock  ...    1.206423e+06             154.278671
+2023-02-15      A         stock  ...    1.192027e+06             154.278671
+2023-02-16      A         stock  ...    1.187170e+06             154.278671
+2023-02-17      A         stock  ...    1.169843e+06             154.278671
+2023-02-21      A         stock  ...    1.144803e+06             154.278671
+
+[5 rows x 10 columns]
+[2023-05-07 20:31:28,896] {logging_mixin.py:115} INFO - RandomForestRegressor(random_state=42)
+[2023-05-07 20:31:28,916] {logging_mixin.py:115} INFO - [1.234651e+06 2.241530e+05 2.325910e+06 2.230190e+06 5.563803e+06
+ 2.055000e+03 1.396428e+06 1.386855e+06 1.733857e+06 6.712316e+06
+ 1.790693e+06 9.387480e+05 1.790529e+06 2.250000e+03 1.125416e+06
+ 3.879900e+04 5.041000e+04 1.730420e+06 1.064959e+06 3.463844e+06
+ 3.771839e+06 4.133051e+06 2.478207e+06 9.952500e+04 2.528879e+06
+ 2.617281e+06 1.536564e+06 3.089488e+06 1.410020e+06 3.677696e+06
+ 1.991817e+06 1.893807e+06 3.348176e+06 6.267371e+06 7.570230e+05
+ 2.635751e+06 3.769698e+06 3.558146e+06 9.393060e+05 4.956951e+06
+ 8.841450e+05 2.597910e+05 1.553000e+03]
+[2023-05-07 20:31:28,919] {logging_mixin.py:115} INFO - 1176614.6279069767
+[2023-05-07 20:31:28,920] {logging_mixin.py:115} INFO - 4873598443321.791
+[2023-05-07 20:31:28,922] {python.py:173} INFO - Done. Returned value was: None
+[2023-05-07 20:31:28,954] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=riskthinking_ai_de, task_id=ml_training, execution_date=20230507T203111, start_date=20230507T203128, end_date=20230507T203128
+[2023-05-07 20:31:29,004] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-05-07 20:31:29,073] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

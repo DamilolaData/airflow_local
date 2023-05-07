@@ -1,0 +1,40 @@
+[2023-05-07 19:43:58,893] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: riskthinking_ai_de.feature_engineering manual__2023-05-07T19:43:47.683022+00:00 [queued]>
+[2023-05-07 19:43:58,914] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: riskthinking_ai_de.feature_engineering manual__2023-05-07T19:43:47.683022+00:00 [queued]>
+[2023-05-07 19:43:58,915] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-07 19:43:58,917] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-05-07 19:43:58,918] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-07 19:43:58,945] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): feature_engineering> on 2023-05-07 19:43:47.683022+00:00
+[2023-05-07 19:43:58,954] {standard_task_runner.py:52} INFO - Started process 8281 to run task
+[2023-05-07 19:43:58,959] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'riskthinking_ai_de', 'feature_engineering', 'manual__2023-05-07T19:43:47.683022+00:00', '--job-id', '264', '--raw', '--subdir', 'DAGS_FOLDER/files/rt_ai_etl.py', '--cfg-path', '/tmp/tmpskokpok8', '--error-file', '/tmp/tmpnwjgkw17']
+[2023-05-07 19:43:58,961] {standard_task_runner.py:80} INFO - Job 264: Subtask feature_engineering
+[2023-05-07 19:43:59,043] {task_command.py:369} INFO - Running <TaskInstance: riskthinking_ai_de.feature_engineering manual__2023-05-07T19:43:47.683022+00:00 [running]> on host 16ca7fe0df6c
+[2023-05-07 19:43:59,161] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=riskthinking_ai_de
+AIRFLOW_CTX_TASK_ID=feature_engineering
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-07T19:43:47.683022+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-07T19:43:47.683022+00:00
+[2023-05-07 19:43:59,221] {logging_mixin.py:115} INFO -    Unnamed: 0 Symbol Security Name  ...       Close   Adj Close   Volume
+0           0      A         stock  ...  150.039993  149.795959  1414300
+1           1      A         stock  ...  151.669998  151.423325  1247400
+2           2      A         stock  ...  152.110001  151.862610  1714600
+3           3      A         stock  ...  147.669998  147.429825  2445000
+4           4      A         stock  ...  147.470001  147.230148  1269600
+
+[5 rows x 10 columns]
+[2023-05-07 19:43:59,302] {logging_mixin.py:115} INFO - processed 328 rows
+[2023-05-07 19:43:59,323] {logging_mixin.py:115} INFO -   Symbol Security Name  ... vol_moving_avg  adj_close_rolling_med
+0      A         stock  ...            NaN                    NaN
+1      A         stock  ...            NaN                    NaN
+2      A         stock  ...            NaN                    NaN
+3      A         stock  ...            NaN                    NaN
+4      A         stock  ...            NaN                    NaN
+
+[5 rows x 11 columns]
+[2023-05-07 19:43:59,324] {python.py:173} INFO - Done. Returned value was: yfinance_data.csv
+[2023-05-07 19:43:59,373] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=riskthinking_ai_de, task_id=feature_engineering, execution_date=20230507T194347, start_date=20230507T194358, end_date=20230507T194359
+[2023-05-07 19:43:59,415] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-05-07 19:43:59,527] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

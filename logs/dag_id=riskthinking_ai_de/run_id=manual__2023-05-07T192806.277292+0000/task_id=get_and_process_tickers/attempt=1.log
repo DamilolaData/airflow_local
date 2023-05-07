@@ -1,0 +1,23 @@
+[2023-05-07 19:28:10,171] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: riskthinking_ai_de.get_and_process_tickers manual__2023-05-07T19:28:06.277292+00:00 [queued]>
+[2023-05-07 19:28:10,186] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: riskthinking_ai_de.get_and_process_tickers manual__2023-05-07T19:28:06.277292+00:00 [queued]>
+[2023-05-07 19:28:10,187] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-07 19:28:10,188] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-05-07 19:28:10,189] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-07 19:28:10,215] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): get_and_process_tickers> on 2023-05-07 19:28:06.277292+00:00
+[2023-05-07 19:28:10,222] {standard_task_runner.py:52} INFO - Started process 7564 to run task
+[2023-05-07 19:28:10,227] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'riskthinking_ai_de', 'get_and_process_tickers', 'manual__2023-05-07T19:28:06.277292+00:00', '--job-id', '256', '--raw', '--subdir', 'DAGS_FOLDER/files/rt_ai_etl.py', '--cfg-path', '/tmp/tmph6cevge1', '--error-file', '/tmp/tmp2rcwi8qs']
+[2023-05-07 19:28:10,229] {standard_task_runner.py:80} INFO - Job 256: Subtask get_and_process_tickers
+[2023-05-07 19:28:10,324] {task_command.py:369} INFO - Running <TaskInstance: riskthinking_ai_de.get_and_process_tickers manual__2023-05-07T19:28:06.277292+00:00 [running]> on host 16ca7fe0df6c
+[2023-05-07 19:28:10,460] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=riskthinking_ai_de
+AIRFLOW_CTX_TASK_ID=get_and_process_tickers
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-07T19:28:06.277292+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-07T19:28:06.277292+00:00
+[2023-05-07 19:28:10,516] {python.py:173} INFO - Done. Returned value was: {'stock': ['A', 'AA'], 'etf': ['AAAU', 'AADR']}
+[2023-05-07 19:28:10,555] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=riskthinking_ai_de, task_id=get_and_process_tickers, execution_date=20230507T192806, start_date=20230507T192810, end_date=20230507T192810
+[2023-05-07 19:28:10,601] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-05-07 19:28:10,693] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
